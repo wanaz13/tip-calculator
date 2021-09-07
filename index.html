@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" role="main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body style="background-color: hsl(185, 41%, 84%)">
+    <div class="intro" role="heading">SPLI <br> TTER</div>
+    <div class="main" id="main">
+        <div class=" input container">
+            <div class="bill row">
+                <tr>Bill</tr>
+                <div class="col"><input type="text" id="bill" placeholder="0"></div>
+            </div>
+            <div class="row ">
+                <tr>
+                    Select Tip %
+                </tr>
+                <div class="row">
+                    <div class="col"> <button class="btn-green" id="5"> 5%</button> </div>
+                    <div class="col"> <button class="btn-green" id="10"> 10%</button> </div>
+                    <div class="col"> <button class="btn-green" id="15"> 15%</button> </div>
+                    <!-- </div>
+                <div class="row"> -->
+                    <div class="col"> <button class="btn-green" id="25"> 25%</button> </div>
+                    <div class="col"> <button class="btn-green" id="50"> 50%</button> </div>
+                    <div class="col"> <input class="btn-green btn-special" id="custom" placeholder="CUSTOM"> </div>
+                </div>
+            </div>
+            <div class=" people row">
+                <tr>
+                    Number of People
+                </tr>
+                <diV class="NOTIS"></diV>
+                <div class=" col ">
+                    <input type="text" id="people" placeholder="0" required>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="calc "> -->
+        <div class="calc container ">
+            <div class=" tip  box ">
+                <p>Tip Amount <br> <span>
+                      / person
+                    </span></p>
+                <div class="answer" id="ans"> $0.00 </div>
+            </div>
+            <div class=" total  box">
+                <p>Total <br> <span> 
+                    / person</span></p>
+                <div class="answer" id="total"> $0.00 </div>
+            </div>
+            <div class="row ">
+                <!-- <button type="reset" class="btn"> RESET </button> -->
+                <div class="btn " onclick="_reset()"> Reset </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script src="calc.js "></script>
+</body>
+
+</html>
